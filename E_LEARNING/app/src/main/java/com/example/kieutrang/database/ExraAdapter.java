@@ -25,8 +25,10 @@ public class ExraAdapter extends ArrayAdapter<Extra> {
     public ExraAdapter(ArrayList<Extra> arrayList, Activity context, int resource) {
         super(context, resource, arrayList);
         this.arrayList = arrayList;
-        this.context = context;
+        //rename
+        this.context1 = context;
         this.resource = resource;
+
     }
 
     @Override
