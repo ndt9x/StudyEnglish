@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">E_LEARNING</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="vocabulary">VOCABULARY</string>
+    <string name="exercise">EXERCISE</string>
+    <string name="test">ENGLISH TESTS</string>
+    <string name="extra">EXTRA</string>
+    <string name="vocabulary_bt">Vocabulary</string>
+    <string name="exercise_bt">Exercise</string>
+    <string name="test_bt">English tests</string>
+    <string name="results">RESULTS</string>
+    <string name="extra_bt">Extra</string>
+    <string name="title_activity_exercise">Exercise</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_extra">Extra</string>
+</resources>

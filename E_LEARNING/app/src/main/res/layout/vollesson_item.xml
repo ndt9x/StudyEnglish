@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="70"
+
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvitem_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shapename"
+                android:gravity="center"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/tvitem_phiemam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/tvitem_nghia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Example:"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/tvitem_vidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/spk" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

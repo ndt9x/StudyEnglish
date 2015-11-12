@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/tvExer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/bg1"
+        android:gravity="center"
+        android:text="@string/exercise"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="@drawable/pt10"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="85"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0.40"
+                android:background="@drawable/fb"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:text="Listen and write down this blank! "
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_normal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.26"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="100" >
+
+                <EditText
+                    android:id="@+id/edExercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shapename"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint="Input word here!"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textsize_normal" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btSpeaker"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/spk" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textsize_normal"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="90" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btCheck"
+                        android:layout_width="105dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg4"
+                        android:text="Check"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btAns"
+                        android:layout_width="117dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg4"
+                        android:text="Answer"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="15"
+            android:background="@drawable/bg1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_Evol"
+                    android:layout_width="@dimen/item_height"
+                    android:layout_height="@dimen/item_height"
+                    android:src="@drawable/vol1" />
+
+                <TextView
+                    android:id="@+id/tvvol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vocabulary_bt"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_Eexer"
+                    android:layout_width="@dimen/item_height"
+                    android:layout_height="@dimen/item_height"
+                    android:src="@drawable/fav1" />
+
+                <TextView
+                    android:id="@+id/tvEexer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exercise_bt"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_Etest"
+                    android:layout_width="@dimen/item_height"
+                    android:layout_height="@dimen/item_height"
+                    android:src="@drawable/pro1" />
+
+                <TextView
+                    android:id="@+id/tvEtest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test_bt"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_Estory"
+                    android:layout_width="@dimen/item_height"
+                    android:layout_height="@dimen/item_height"
+                    android:src="@drawable/story1" />
+
+                <TextView
+                    android:id="@+id/tvEStory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extra_bt"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
